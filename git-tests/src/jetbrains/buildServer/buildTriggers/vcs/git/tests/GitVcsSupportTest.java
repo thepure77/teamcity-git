@@ -89,7 +89,7 @@ public class GitVcsSupportTest extends PatchTestCase {
   private ResetCacheRegister myResetCacheManager;
   private ServerPaths myServerPaths;
   private Mockery myContext;
-  private SshKnownHostsManager myKnownHostsManager = new ServerSshKnownHostsManagerImpl();
+  private SshKnownHostsManager myKnownHostsManager = new ServerSshKnownHostsManagerImpl(null);
   @BeforeMethod
   public void setUp() throws IOException {
     myTestLogger.setLogLevel(Level.INFO);

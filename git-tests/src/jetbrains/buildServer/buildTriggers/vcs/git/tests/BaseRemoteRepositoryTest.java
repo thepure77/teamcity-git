@@ -31,7 +31,7 @@ public abstract class BaseRemoteRepositoryTest {
   protected BuildAgentConfiguration myAgentConfiguration;
   private String[] myRepositories;
   private Map<String, File> myRemoteRepositories;
-  protected SshKnownHostsManager myKnownHostsManager = new ServerSshKnownHostsManagerImpl();
+  protected SshKnownHostsManager myKnownHostsManager = new ServerSshKnownHostsManagerImpl(null);
 
   protected BaseRemoteRepositoryTest(String... repositories) {
     myRepositories = repositories;
